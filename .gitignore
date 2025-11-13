@@ -1,0 +1,14 @@
+# OS junk
+.DS_Store
+
+# IntelliJ / IDEA
+.idea/
+*.iml
+out/
+
+# Gradle build outputs (keep the wrapper)
+.gradle/
+build/
+
+# Logs
+*.log

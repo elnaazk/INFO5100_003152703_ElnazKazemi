@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "title": "Pride and Prejudice",
+      "publishedYear": 1813,
+      "numberOfPages": 279,
+      "authors": ["Jane Austen"]
+    },
+    {
+      "title": "1984",
+      "publishedYear": 1949,
+      "numberOfPages": 328,
+      "authors": ["George Orwell"]
+    },
+    {
+      "title": "The Great Gatsby",
+      "publishedYear": 1925,
+      "numberOfPages": 180,
+      "authors": ["F. Scott Fitzgerald"]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookShelf>
+    <book>
+        <title>Pride and Prejudice</title>
+        <publishedYear>1813</publishedYear>
+        <numberOfPages>279</numberOfPages>
+        <authors>
+            <author>Jane Austen</author>
+        </authors>
+    </book>
+
+    <book>
+        <title>1984</title>
+        <publishedYear>1949</publishedYear>
+        <numberOfPages>328</numberOfPages>
+        <authors>
+            <author>George Orwell</author>
+        </authors>
+    </book>
+
+    <book>
+        <title>The Great Gatsby</title>
+        <publishedYear>1925</publishedYear>
+        <numberOfPages>180</numberOfPages>
+        <authors>
+            <author>F. Scott Fitzgerald</author>
+        </authors>
+    </book>
+</bookShelf>

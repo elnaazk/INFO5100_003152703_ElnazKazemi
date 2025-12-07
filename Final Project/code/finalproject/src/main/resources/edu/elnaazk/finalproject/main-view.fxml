@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="edu.elnaazk.finalproject.MainController">
+
+    <top>
+        <Label text="Simple Image Manager" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </BorderPane.margin>
+        </Label>
+    </top>
+
+    <left>
+        <VBox spacing="10" BorderPane.alignment="CENTER_LEFT">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Add Images" fx:id="addImagesButton" onAction="#onAddImages"/>
+            <ListView fx:id="imageListView" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <ImageView fx:id="previewImageView" preserveRatio="true" fitWidth="400" fitHeight="400"/>
+        </StackPane>
+    </center>
+
+    <right>
+        <VBox spacing="10" BorderPane.alignment="CENTER_RIGHT">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Image Info"/>
+            <GridPane hgap="5" vgap="5">
+                <Label text="Width:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <Label fx:id="widthLabel" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <Label text="Height:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <Label fx:id="heightLabel" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                <Label text="Size:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <Label fx:id="sizeLabel" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                <Label text="Type:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <Label fx:id="typeLabel" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            </GridPane>
+            <Separator/>
+            <Label text="Convert Format"/>
+            <ComboBox fx:id="formatComboBox"/>
+            <Button text="Convert" fx:id="convertButton" onAction="#onConvert"/>
+        </VBox>
+    </right>
+
+</BorderPane>
